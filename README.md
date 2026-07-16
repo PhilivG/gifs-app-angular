@@ -1,59 +1,63 @@
-# 03GifsApp
+# 🎞️ Gifs App
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.0.1.
+<div align="center">
+<a href="https://gifs-app-philvg.netlify.app/dashboard/trending">
+<img src="./public/gifapp.webp">
+</a>
+<p></p>
+</div>
 
-## Development server
+<div align="center">
 
-To start a local development server, run:
+![Angular Badge](https://img.shields.io/badge/Angular-DD0031?logo=angular&logoColor=fff&style=flat)
+![TypeScript Badge](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff&style=flat)
+![Tailwind CSS Badge](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=flat)
+![GitHub stars](https://img.shields.io/github/stars/PhilivG/gifs-app)
+![GitHub issues](https://img.shields.io/github/issues/PhilivG/gifs-app)
 
-```bash
-ng serve
-```
+</div>
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 📋 Descripción
 
-## Code scaffolding
+Aplicación para buscar y guardar GIFs usando la API de Giphy. Proyecto del módulo de Angular del bootcamp BIT Full Stack — es mi primer acercamiento al framework, así que todavía es un proyecto de aprendizaje en construcción.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+> ⚠️ **Nota:** el diseño todavía no es responsive — por ahora solo se ve bien en resoluciones de escritorio. Falta agregar breakpoints de Tailwind para adaptarlo a celular/tablet.
 
-```bash
-ng generate component component-name
-```
+## 🚀 Tecnologías
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- Angular (Signals, standalone components, lazy loading)
+- TypeScript
+- Tailwind CSS
+- RxJS
+- Giphy API
 
-```bash
-ng generate --help
-```
+## ⚙️ Instalación
 
-## Building
+\`\`\`bash
+git clone https://github.com/PhilivG/gifs-app.git
+cd gifs-app
+pnpm install
+\`\`\`
 
-To build the project run:
+Crea `src/environments/environment.development.ts` con tu propia API key de Giphy:
 
-```bash
-ng build
-```
+\`\`\`ts
+export const environment = {
+  active: true,
+  companyName: 'Gifs',
+  companyName2: 'App',
+  companySlogan: 'Maneja tus gifs',
+  apiUrl: 'https://api.giphy.com/v1',
+  apiKey: 'TU_API_KEY_AQUI'
+}
+\`\`\`
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## ▶️ Uso
 
-## Running unit tests
+\`\`\`bash
+pnpm start
+\`\`\`
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+## 📝 Notas de aprendizaje
 
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Este proyecto es parte de mi proceso aprendiendo Angular desde cero. Ha sido mi primer acercamiento real al framework y me está gustando mucho — cada cosa nueva que aprendo (Signals, standalone components, RxJS) me ha hecho disfrutar más el proceso, y sigo con muchas ganas de seguir explorando todo lo que Angular puede ofrecer.

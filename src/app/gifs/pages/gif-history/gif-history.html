@@ -1,0 +1,14 @@
+<h3 class="text-2xl mt-4 font-bold">Mostrando: {{ query() }}</h3>
+<hr class="border-gray-300" />
+
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+  @for (groups of gifsByKey(); track $index) {
+    <div class="grid gap-4">
+      @for (gif of groups; track gif.id) {
+        <div>
+          <img class="h-full w-full rounded-base" [src]="gif.url" [alt]="gif.title" />
+        </div>
+      }
+    </div>
+  }
+</div>
