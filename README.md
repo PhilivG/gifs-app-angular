@@ -1,7 +1,7 @@
 # 🎞️ Gifs App
 
 <div align="center">
-<a href="https://gifs-app-philvg.netlify.app/dashboard/trending">
+<a href="https://gifs-app-philvg.netlify.app">
 <img src="./public/gifapp.webp">
 </a>
 <p></p>
